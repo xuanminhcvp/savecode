@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Học CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main-content {
+            float: left;
+            width: 70%;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            float: right;
+            width: 25%;
+            background: #e2e2e2;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            clear: both;
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .main-content, .sidebar {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chào Mừng Đến Với Trang Học CSS</h1>
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="#">Liên Hệ</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Nội Dung Chính</h2>
+        <p>CSS (Cascading Style Sheets) là ngôn ngữ dùng để định dạng trang web.</p>
+        <p>Học CSS có thể giúp bạn tạo ra những trang web đẹp mắt và chuyên nghiệp.</p>
+    </div>
+    
+    <aside class="sidebar">
+        <h3>Thực Hành CSS</h3>
+        <ul>
+            <li><a href="#">Bài Tập 1</a></li>
+            <li><a href="#">Bài Tập 2</a></li>
+            <li><a href="#">Bài Tập 3</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2024 Trang Học CSS. Tất cả quyền được bảo lưu.</p>
+</footer>
+
+</body>
+</html>
